@@ -6,7 +6,7 @@ using a websocket connecting to binance.
 
 ### Usage
 ```
-custom_binance = CustomBinance()
+custom_binance = CustomBinance(config={"end_point": end_point, "event_type": event_type})
 order_book = custom_binance.fetch_order_book(symbol)
 ```
 By calling the function, a cached order book (which is updating in realtime) will be return.
